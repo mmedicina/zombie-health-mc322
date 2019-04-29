@@ -1,2 +1,4 @@
+#ignorar arquivos executáveis em java 
 *.class
+#ignorar diretório padrão do VS Code
 .vscode/
