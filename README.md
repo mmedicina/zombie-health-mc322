@@ -4,3 +4,4 @@ Repositório utilizado para o trabalho final da disciplina de Orientação de Ob
 ## Participantes:
 * [Natan Rodrigues de Oliveira](https://github.com/natrodrigues)
 * [Caio Emanuel Rhoden](https://github.com/CaioRhoden)
+* [Alexandre Okita](https://github.com/AlexandreOkita)
