@@ -1,11 +1,11 @@
 package project.components;
 
 import project.interfaces.IEnquirer;
-import project.interfaces.IGraph;
+import project.interfaces.IGraphic;
 import project.interfaces.IAnswer;
 import project.interfaces.ITableProducer;
 
-public class GraphComponent implements IGraph {
+public class GraphicComponent implements IGraphic {
 
     @Override
     public void connect(IEnquirer enquirer) {
