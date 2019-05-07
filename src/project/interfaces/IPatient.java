@@ -1,4 +1,4 @@
 package project.interfaces;
 
-public interface IPatient extends IResponder, ITableProducerReceptacle {
+public interface IPatient extends IAnswer, ITableProducerReceptacle {
 }
