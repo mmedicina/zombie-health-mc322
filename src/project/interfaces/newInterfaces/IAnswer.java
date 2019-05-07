@@ -1,5 +1,5 @@
 
-package project.interfaces;
+package project.newInterfaces;
 
 
 public interface IAnswer {
