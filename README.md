@@ -1,5 +1,5 @@
 # zombie-health-mc322
-Repositório utilizado para o trabalho final da disciplina de Orientação de Objetos do primeiro semestre de 2019 da Unicamp.
+Repositório utilizado para o trabalho final da disciplina do grupo **Dino Scientist** de Orientação de Objetos do primeiro semestre de 2019 da Unicamp.
 
 ## Documentação do código:
 A documentação dos códigos que compõe este projeto, incluindo componentes, interfaces e notebooks do júpiter, se encontram nos arquivos README dos respectivos pacotes que podem ser acessado logo abaixo: 
