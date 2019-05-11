@@ -5,8 +5,8 @@ Neste README teremos a documentação de todos os componentes presentes neste di
 Campo | Valor
 ----- | -----
 Classe | `project.components.Patient`
-Autores | `Dino Scientists`
-Objetivo | `Implementar métodos para responder perguntas do Doutor`
+Autores | Dino Scientists
+Objetivo | Implementar métodos para responder perguntas do Doutor
 Interface | `IPatient`
 
 ```
