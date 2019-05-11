@@ -1,24 +1,23 @@
-# Documentação dos componentes
-Neste README teremos a documentação de todos os componentes presentes neste diretório do projeto. Segue abaixo a documentação de cada um.
-
-### Componente `Patient`
+## Componente `DataSet`
 Campo | Valor
 ----- | -----
-Classe | `project.components.Patient`
-Autores | Dino Scientists
-Objetivo | Implementar métodos para responder perguntas do Doutor
-Interface | `IPatient`
+Classe | `project.components.DataSetComponent`
+Autores | `Dino Scientists`
+Objetivo | `Organizar as tabelas de entrada em Strings para ser facilmente manipuladas`
+Interface | `IDataSet`
 
 ```
-public interface ITableProducerReceptacle {
-    public void connect(ITableProducer producer);
+public interface ITableProducer {
+    String[] requestAttributes();
+    String[][] requestInstances();
 }
 
-public interface IAnswer {
-    public String ask(String question);
-    public boolean finalAnswer(String answer);
+public interface IDataSource {
+    public String getDataSource();
+    public void setDataSource(String dataSource);
 }
 
-public interface IPatient extends IAnswer, ITableProducerReceptacle {
+public interface IDataSet extends IDataSource, ITableProducer {
 }
 ```
+
