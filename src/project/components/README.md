@@ -1,6 +1,27 @@
 # Documentação dos componentes
 Neste README teremos a documentação de todos os componentes presentes neste diretório do projeto. Segue abaixo a documentação de cada um.
 
+## Componente `Patient`
+Campo | Valor
+----- | -----
+Classe | `project.components.Patient`
+Autores | `Dino Scientists`
+Objetivo | `Implementar métodos para responder perguntas do Doutor`
+Interface | `IPatient`
+
+```
+public interface ITableProducerReceptacle {
+    public void connect(ITableProducer producer);
+}
+
+public interface IAnswer {
+    public String ask(String question);
+    public boolean finalAnswer(String answer);
+}
+
+public interface IPatient extends IAnswer, ITableProducerReceptacle {
+}
+```
 
 ## Componente `DataSet`
 Campo | Valor
@@ -25,48 +46,6 @@ public interface IDataSet extends IDataSource, ITableProducer {
 }
 ```
 
-## Componente `GraphicComponent`
-Campo | Valor
------ | -----
-Classe | `project.components.GraphicComponent`
-Autores | `Dino Scientists`
-Objetivo | `Receber os dados e formar o gráfico das probabilidades`
-Interface | `IGraphic`
-
-```
-public interface ITableProducerReceptacle {
-    public void connect(ITableProducer producer);
-}
-
-public interface IGraphic extends IEnquirerReceptacle, ITableProducerReceptacle, IAnswerReceptacle{
-
-}
-
-```
-
-## Componente `Patient`
-Campo | Valor
------ | -----
-Classe | `project.components.Patient`
-Autores | `Dino Scientists`
-Objetivo | `Implementar métodos para responder perguntas do Doutor`
-Interface | `IPatient`
-
-```
-public interface ITableProducerReceptacle {
-    public void connect(ITableProducer producer);
-}
-
-public interface IAnswer {
-    public String ask(String question);
-    public boolean finalAnswer(String answer);
-}
-
-public interface IPatient extends IAnswer, ITableProducerReceptacle {
-}
-```
-
-
 ## Componente `SecondOpinion`
 Campo | Valor
 ----- | -----
@@ -79,7 +58,13 @@ Interface | `ISegundaOpiniao`
 public interface IDataSet extends IDataSource, ITableProducer {
 }
 
-public interface ISecondOpinion extends IDataSet {
+public interface ISplitDataSet extends IDataSet{
+    public String[] getDiseases();
+    public String[] getSymptoms();
+}
+
+
+public interface ISecondOpinion extends IDataSet, ISplitDataSet {
     public String getHighestProbDisease();
     public String getSecHighestProbDisease();
     
