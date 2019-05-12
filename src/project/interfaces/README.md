@@ -15,3 +15,10 @@ Método | Objetivo
 ------ | --------
 `<no method>` | `<no method>`
 
+### Interface `IGraphic`
+Interface responsável por construir a Árvore de Decisão que se encarregará da primeira opinião do Doutor.
+
+Método | Objetivo
+------ | --------
+`buildTree` | Constrói Árvore de Decisão, selecionando a ordem das melhores perguntas a serem feitas e guarda a referência da árvore internamente.
+
