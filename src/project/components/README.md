@@ -85,7 +85,7 @@ public interface ISplitDataSet extends IDataSet{
 }
 
 
-public interface ISecondOpinion extends IDataSet, ISplitDataSet {
+public interface ISecondOpinion extends IDataSet, ISplitDataSet, IPatient {
     public String getHighestProbDisease();
     public String getSecHighestProbDisease();
     
