@@ -41,10 +41,17 @@ Método | Objetivo
 `buildTree` | Constrói Árvore de Decisão, selecionando a ordem das melhores perguntas a serem feitas e guarda a referência da árvore internamente.
 
 ### Interface `ISplitDataSet`
-Interface responsável por separar quais são as doenças e os sintomas no dataset.
+Extende a interface : `IDataSet`. Interface responsável por separar quais são as doenças e os sintomas no dataset.
 
 Método | Objetivo
 ------ | --------
 `getDiseases` | Retorna um vetor de strings contendo as doenças do dataset.
 `getSymptoms` | Retorna um vetor de strings contendo os sintomas do dataset.
 
+### Interface `ISecondOpinion`
+Extende outras duas interfaces : `IDataSet`, `ISplitDataSet` e `IPatient`. Interface responsável por obter tanto a doença mais provável quanto a segunda mais provável, caso exista.
+
+Método | Objetivo
+------ | --------
+`getHighestProbDisease` | Retorna uma string contendo a doença mais provável de ocorrer.
+`getSecHighestProbDisease` | Retorna uma string contendo a segunda doença mais provável de ocorrer, caso haja a certeza de uma doença apenas, retorna null.
