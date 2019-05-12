@@ -52,7 +52,7 @@ Campo | Valor
 Classe | `project.components.SecondOpinionComponent`
 Autores | `Dino Scientists`
 Objetivo | `Dar ao paciente uma segunda opinião sobre seus sintomas, verificando a primeira resposta do doutor e comentando caso haja uma segunda doença menos provável mas ainda possível. Abrange os outliers utilizando comparações entre modelos gerados por RandomForest.
-Interface | `ISegundaOpiniao`
+Interface | `ISecondOpinion`
 
 ```
 public interface IDataSet extends IDataSource, ITableProducer {
