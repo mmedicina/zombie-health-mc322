@@ -39,3 +39,12 @@ Interface responsável por construir a Árvore de Decisão que se encarregará d
 Método | Objetivo
 ------ | --------
 `buildTree` | Constrói Árvore de Decisão, selecionando a ordem das melhores perguntas a serem feitas e guarda a referência da árvore internamente.
+
+### Interface `ISplitDataSet`
+Interface responsável por separar quais são as doenças e os sintomas no dataset.
+
+Método | Objetivo
+------ | --------
+`getDiseases` | Retorna um vetor de strings contendo as doenças do dataset.
+`getSymptoms` | Retorna um vetor de strings contendo os sintomas do dataset.
+
