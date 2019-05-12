@@ -55,3 +55,10 @@ Método | Objetivo
 ------ | --------
 `getHighestProbDisease` | Retorna uma string contendo a doença mais provável de ocorrer.
 `getSecHighestProbDisease` | Retorna uma string contendo a segunda doença mais provável de ocorrer, caso haja a certeza de uma doença apenas, retorna null.
+
+### Interface `IDecisionTree`
+Extende outras duas interfaces : `ITreeProducer`, e `ITableProducerReceptacle`. Interface responsável por analisar a tabela de correlações entre doenças e sintomas e fazer a ordem de perguntas mais efetivas.
+
+Método | Objetivo
+------ | --------
+`getBestQuestions` | Retorna um vetor de contendo a ordem dos sintomas a serem perguntados a fim de diminuir o número de perguntas para descobrir uma doença.
