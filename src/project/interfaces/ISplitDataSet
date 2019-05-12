@@ -1,6 +1,6 @@
 package project.interfaces;
 
-public interface ISplitDataSet {
+public interface ISplitDataSet extends IDataSet{
     public String[] getDiseases();
     public String[] getSymptoms();
 }
