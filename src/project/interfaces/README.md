@@ -49,7 +49,7 @@ Método | Objetivo
 `getSymptoms` | Retorna um vetor de strings contendo os sintomas do dataset.
 
 ### Interface `ISecondOpinion`
-Extende outras duas interfaces : `IDataSet`, `ISplitDataSet` e `IPatient`. Interface responsável por obter tanto a doença mais provável quanto a segunda mais provável, caso exista.
+Extende outras três interfaces : `IDataSet`, `ISplitDataSet` e `IPatient`. Interface responsável por obter tanto a doença mais provável quanto a segunda mais provável, caso exista.
 
 Método | Objetivo
 ------ | --------
