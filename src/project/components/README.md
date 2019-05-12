@@ -55,14 +55,7 @@ Objetivo | `Dar ao paciente uma segunda opinião sobre seus sintomas, verificand
 Interface | `ISegundaOpiniao`
 
 ```
-public interface ITableProducer {
-    String[] requestAttributes();
-    String[][] requestInstances();
-}
-
-public interface IDataSource {
-    public String getDataSource();
-    public void setDataSource(String dataSource);
+public interface IDataSet extends IDataSource, ITableProducer {
 }
 
 public interface ISecondOpinion extends IDataSet {
