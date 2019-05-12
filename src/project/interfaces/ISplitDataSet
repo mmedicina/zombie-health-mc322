@@ -1,0 +1,6 @@
+package project.interfaces;
+
+public interface ISplitDataSet {
+    public String[] getDiseases();
+    public String[] getSymptoms();
+}
