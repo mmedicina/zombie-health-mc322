@@ -8,6 +8,13 @@ Método | Objetivo
 ------ | --------
 `<no method>` | `<no method>`
 
+### Interface `IAnswerReceptacle`
+Faz a conexão entre as componentes **Doctor** e **Patient**. Responsável por passar as respostas às perguntas de **Doctor**.
+
+Método | Objetivo
+------ | --------
+`connect` | `Recebe uma interface da componente **Patient**.`
+
 ### Interface `IEnquirerReceptable`
 Conecta as outras interfaces com o IEnquirer 
 
@@ -16,8 +23,7 @@ Método | Objetivo
 `connect` | `Responsável pela conexão das interfaces que extenderem o IEnquireReceptable com o IEnquirer`
 
 ### Interface `IGraphic`
-Extende outras três interfaces : `IEnquirerReceptacle`, `ITableProducerReceptacle` e `IAnswerReceptacle`. Responsável por unir
-todas as partes necessárias para a formação do gráfico 
+Extende outras três interfaces : `IEnquirerReceptacle`, `ITableProducerReceptacle` e `IAnswerReceptacle`. Responsável por unir todas as partes necessárias para a formação do gráfico 
 
 Método | Objetivo
 ------ | --------
@@ -32,8 +38,11 @@ Método | Objetivo
 `requestAttributes` | `Responsável por captar as classes do DataSet`
 `requestInstances` | `Responsável por captar as instâncias de cada classe`
 
+### Interface `IDataSet`
+Estende duas outras interfaces: `IDataSource` e `ITableProducer`. Responsável por receber uma tabela de entrada e convertê-la em uma matriz de strings que pode ser facilmente manipulada.
+
 ### Interface `ITableProducerReceptacle`
-Responsável por conectar a componente DataSet provedora de uma tabela .csv de sintomas e doenças à componentes receptoras.
+Responsável por conectar a componente **DataSet** provedora de uma tabela .csv de sintomas e doenças à componentes receptoras.
 
 Método | Objetivo
 ------ | --------
