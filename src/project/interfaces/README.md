@@ -32,6 +32,12 @@ Método | Objetivo
 `requestAttributes` | `Responsável por captar as classes do DataSet`
 `requestInstances` | `Responsável por captar as instâncias de cada classe`
 
+### Interface `ITableProducerReceptacle`
+Responsável por conectar a componente DataSet provedora de uma tabela .csv de sintomas e doenças à componentes receptoras.
+
+Método | Objetivo
+------ | --------
+`connect` | Recebe uma interface da componente DataSet que proverá a tabela .csv.
 
 ### Interface `ITreeProducer`
 Interface responsável por construir a Árvore de Decisão que se encarregará da primeira opinião do Doutor.
