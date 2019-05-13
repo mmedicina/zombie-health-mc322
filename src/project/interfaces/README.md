@@ -9,11 +9,11 @@ Método | Objetivo
 `<no method>` | `<no method>`
 
 ### Interface `IAnswerReceptacle`
-Faz a conexão entre as componentes **Doctor** e **Patient**. Responsável por passar as respostas às perguntas de **Doctor**.
+Faz a conexão entre as componentes **Doctor** e **Patient**. Responsável por passar as perguntas e diagnóstico de **Doctor** a **Patient**.
 
 Método | Objetivo
 ------ | --------
-`connect` | `Recebe uma interface da componente **Patient**.`
+`connect` | `Recebe uma interface IAnswer da componente Doctor.`
 
 ### Interface `IEnquirerReceptable`
 Conecta as outras interfaces com o IEnquirer 
