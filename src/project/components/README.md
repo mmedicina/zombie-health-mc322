@@ -91,3 +91,10 @@ public interface ISecondOpinion extends IDataSet, ISplitDataSet, IPatient {
     
 }
 ```
+## Componente `IfirstOpinion`
+Campo | Valor
+----- | -----
+Classe | `project.components.FirstOpinionComponent`
+Autores | `Dino Scientists`
+Objetivo | `Gera uma Árvore de Decisão com base na tabela de correlação, na qual são analisados os sintomas possíveis e sua importância para o diagnóstico. 
+Interface | `IFirstOpinion`
